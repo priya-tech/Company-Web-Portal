@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en";>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    b{
+      font-size:20px;
+    }
+    h1{
+      text-align:center;
+      background-color:blue;
+      width: 100%;
+
+    }
+
+
+    .login{
+  display: flex;
+  margin:0 auto;
+  align-items: center;
+  flex-direction: column;
+  border-style: solid;
+  border-color: black;
+  border-width:1px;
+  width:400px;
+}
+    input[type=text], input[type=password],input[type=email] {
+      width: 90%;
+      padding: 16px;
+      margin: 5px 0 22px 0;
+      display: block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    .register{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    }
+    .register:hover{
+      background-color: green;
+    }
+  </style>
+  </head>
+  <body>
+
+
+      <br>
+         <div class="login">
+      <h1>Login</h1>
+        <form class="php" action="login.php" method="post">
+    <label for="email"><b>Email</b></label><br>
+    <input type="email"placeholder="Enter Email"  name="email" required><br>
+    <label for="password"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="password" required><br>
+    <p>click to mark your attendance</p>
+ <input type="radio" name="attend" value="present"> Present <br>    <hr>
+    <button type="submit" class="register">Log In</button><br>
+    <p>You have no account <a href="signup.html">Sign Up</a></p>
+      </form>
+  </div>
+</body>
+
+</html>
